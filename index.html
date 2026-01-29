@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Endless Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BLURRED BACKGROUND -->
+  <div class="background"></div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <nav class="menu">
+      <button onclick="show('profile')">Profile</button>
+      <button onclick="show('score')">Check Score</button>
+      <button onclick="show('tasks')">Tasks</button>
+      <button onclick="show('leaderboard')">Leaderboard</button>
+    </nav>
+
+    <!-- PROFILE -->
+    <section id="profile" class="section active">
+      <div class="card">
+
+        <div class="avatar">
+          <img src="endless-logo.png" />
+        </div>
+
+        <h2 id="displayName">sa1</h2>
+
+        <div class="name-row">
+          <input id="nameInput" placeholder="Enter your name" disabled />
+          <button id="nameBtn" onclick="changeName()">Change Nick</button>
+        </div>
+
+        <p class="score">
+          Community Score: <span id="profileScore">—</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CHECK SCORE -->
+    <section id="score" class="section">
+      <div class="card">
+        <h3 id="scoreText">Score not calculated</h3>
+      </div>
+    </section>
+
+    <!-- TASKS -->
+    <section id="tasks" class="section">
+      <div class="card">
+        <h3>Tasks</h3>
+
+        <div class="task">
+          <p>Share Endless post</p>
+          <input placeholder="Link" />
+          <button>Submit</button>
+        </div>
+
+        <div class="task">
+          <p>Join Discord</p>
+          <input placeholder="Username" />
+          <button>Submit</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard" class="section">
+      <div class="card">
+        <h3>Leaderboard</h3>
+        <p id="lb"></p>
+        <div class="blur">coming soon</div>
+      </div>
+    </section>
+
+    <footer>Made by sa1</footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
