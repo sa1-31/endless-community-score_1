@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* BACKGROUND – ONLY IMAGE + BLUR */
+.background {
+  position: fixed;
+  inset: 0;
+
+  background-image: url("Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(20px);
+  transform: scale(1.1); /* blur kənar boşluq verməsin */
+
+  z-index: -1;
+}
+
+/* CONTENT */
+.content {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* CARD */
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 16px;
+
+  background: rgba(0,0,0,0.55);
+  text-align: center;
+}
+
+/* PROFILE */
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 60%;
+}
+
+#displayName {
+  margin: 10px 0;
+}
+
+/* NAME CHANGE */
+.name-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.name-row input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.name-row button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* TASKS */
+.task {
+  margin-top: 12px;
+}
+
+.task input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+}
+
+.task button {
+  margin-top: 6px;
+  width: 100%;
+  padding: 8px;
+}
+
+/* LEADERBOARD */
+.blur {
+  margin-top: 10px;
+  filter: blur(4px);
+  opacity: 0.6;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
